@@ -10,7 +10,9 @@ if you want to use this project then do the following steps:
 
 4.Run php artisan key:generate
 
-5. Run php artisan jwt:secret
+5. Run php artisan vendor:publish --provider="PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider"
+   
+7. Run php artisan jwt:secret
 
 6.Run php artisan migrate
 
