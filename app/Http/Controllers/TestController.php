@@ -10,7 +10,7 @@ class TestController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response
      */
     public function index()
     {
@@ -51,7 +51,7 @@ class TestController extends Controller
             'status' => 1,
             'message' => 'data dapat disimpan',
             'data' => $test,
-        ]);
+        ], 200);
     }
 
     /**
